@@ -40,7 +40,7 @@ class UserController extends Controller
             $user = auth()->user();
             $token = $user->createToken('authToken')->plainTextToken;
 
-            return response()->json(['token' => $token], 200);
+            return response()->json(['token' => $token,'message' => 'Logged in successfully'], 200);
         } else {
             // User authentication failed
             return response()->json(['message' => 'Unauthorized'], 401);
