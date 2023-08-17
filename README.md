@@ -31,21 +31,21 @@ run php artisan migrate
 run php artisan serve
 ## endpoints
 
-  POST            api/login .......................................... UserController@login
-  GET|HEAD        api/posts .......................................... PostController@index
-  POST            api/posts ............................ posts.store › PostController@store
-  GET|HEAD        api/posts/{post} ....................... posts.show › PostController@show
-  PUT|PATCH       api/posts/{post} ................... posts.update › PostController@update
-  DELETE          api/posts/{post} ................. posts.destroy › PostController@destroy
-  POST            api/posts/{post}/tags ............................ PostController@addTags
-  DELETE          api/posts/{post}/tags/{tag} .................... PostController@removeTag
-  POST            api/register .................................... UserController@register
-  GET|HEAD        api/tags ............................... tags.index › TagController@index
-  POST            api/tags ............................... tags.store › TagController@store
-  GET|HEAD        api/tags/{tag} ........................... tags.show › TagController@show
-  PUT|PATCH       api/tags/{tag} ....................... tags.update › TagController@update
-  DELETE          api/tags/{tag} ..................... tags.destroy ›
-   
+  POST            api/login
+  GET|HEAD        api/posts
+  POST            api/posts
+  GET|HEAD        api/posts/{post}
+  PUT|PATCH       api/posts/{post}
+  DELETE          api/posts/{post} 
+  POST            api/posts/{post}/tags 
+  DELETE          api/posts/{post}/tags/{tag}
+  POST            api/register 
+  GET|HEAD        api/tags 
+  POST            api/tags
+  GET|HEAD        api/tags/{tag}
+  PUT|PATCH       api/tags/{tag}
+  DELETE          api/tags/{tag} 
+  POST            api/logout 
 ## Authors
 Daniel
 
