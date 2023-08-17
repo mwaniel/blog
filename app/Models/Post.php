@@ -7,10 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    public function tags()
-{
-    return $this->belongsToMany(Tag::class);
-}
+    protected $fillable = ['title', 'body', 'user_id'];
 
-    use HasFactory;
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }

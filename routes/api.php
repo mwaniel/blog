@@ -22,7 +22,7 @@ Route::post('/login', [UserController::class, 'login']);
 
 // Protected Routes (require authentication)
 Route::middleware('auth:sanctum')->group(function () {
-    // User-related routes (profile, logout, etc.) can be added here
+
 
     // Blog Post routes
     Route::apiResource('posts', PostController::class);
