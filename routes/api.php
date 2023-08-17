@@ -31,6 +31,9 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Tag routes
     Route::apiResource('tags', TagController::class);
+
+    // Logout route
+    Route::post('/logout', [UserController::class, 'logout']);
 });
 
 // Public route to retrieve all posts (no authentication required)
