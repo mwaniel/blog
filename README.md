@@ -31,7 +31,7 @@ run php artisan migrate
 run php artisan serve
 ## endpoints
 
-  POST            api/login
+  POST            api/login <br>
   GET|HEAD        api/posts
   POST            api/posts
   GET|HEAD        api/posts/{post}
